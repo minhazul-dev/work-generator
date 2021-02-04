@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bored</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Please Refresh</h2>
+        <h1 id="activity"> </h1>
+    </div>
+    <!-- <div class="container">
+        <h1 id="activity"> </h1>
+    <h3>learn from : <a id="explore_link" href=""> Visit this place</a> </h3>
+    </div> -->
+
+    <script>
+      function doSomething(){
+        fetch ('http://www.boredapi.com/api/activity/')
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById('activity').innerText= data.activity
+        });
+
+      }
+      doSomething();
+    </script>
+</body>
+</html>

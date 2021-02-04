@@ -1,0 +1,20 @@
+.container{
+ text-align:center;
+ margin-top: 25%;
+
+
+}
+.container h2{
+    color: white;
+    font-size:35px;
+}
+.container h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size:45px;
+    font-weight:bold;
+}
+
+body{
+    background-color:  #34495E ;
+}
